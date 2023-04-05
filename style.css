@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.hero {
+    padding: 80px;
+    text-align: center;
+}
+
+.hero-title b {
+    font-size: 25px;
+}
+
+.hero-subtitle {
+    font-size: 16px;
+    margin: 10px 150px;
+    display: block;
+    letter-spacing: 1px;
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.card {
+    flex: 33.33%;
+    padding: 3px;
+}
+
+.card img {
+    height: 400px;
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.imgmascara {
+    height: 45%;
+    object-fit: cover;
+}
+
+.description {
+    text-align: center;
+    padding: 20px;
+}
+
+.description p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.description span {
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+}
+
+
+.product {
+    margin: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.product-info {
+    background-color: #fdbf01;
+    padding: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.product-info h2 {
+    color: white;
+    font-size: 36px
+}
+
+.product-info p {
+    margin: 50px 0;
+    display: block;
+    font-size: 16px;
+}
+
+.logo {
+    max-width: 90px;
+    max-height: 90px;
+}
+
+.product-eye-img {
+    position: relative;
+}
+
+.product-eye-img:before {
+    content: ' ';
+    position: absolute;
+    top: -40px;
+    right: 0;
+    height: 100%;
+    width: 98px;
+    background-image: url(../pictures/h1.png);
+    background-repeat: no-repeat;
+
+}
+
+.product-info:before {
+    content: ' ';
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    height: 100%;
+    width: 98px;
+    background-image: url(../pictures/h2.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
